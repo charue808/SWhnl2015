@@ -7,4 +7,4 @@ Router.route('/', {name: 'home'});
 
 Router.route('/Donors', {name: 'donorPage'});
 
-Router.route('/Teachers', {name: 'teacherPage'});
+Router.route('/Campaign-Submission', {name: 'submitCampaign'});

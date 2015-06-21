@@ -1,4 +1,4 @@
-Template.teacherPage.events({
+Template.submitCampaign.events({
   "submit form": function(e){
       e.preventDefault();
       var book = {
