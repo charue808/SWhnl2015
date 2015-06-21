@@ -21,16 +21,20 @@
 Template.home.helpers({
   book: function(){
     return Books.find();
+  },
+  
+  showTitle: function() {
+      var selectedBook = Session.get('selectedBook');
+      return Books.findOne(selectedBook);
+      
   }
 });
 
-Template.bookItem.helpers({
-  tags: function(){
-    var tags = Template.instance().data.author.split(',');
-    return tags;
-  }
-});
 
-Template.tag.rendered = function(){
-  console.log(this);
-};
+
+Template.bookItem.events({
+    'click button': function() {
+        var bookId = this._id;
+        Session.set('selectedBook', bookId)
+    }
+});

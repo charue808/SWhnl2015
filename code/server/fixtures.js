@@ -21,7 +21,7 @@ if (Books.find().count() === 0) {
     });
 
     Books.insert({
-        cover: "http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00768DB2S&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=wwwreadersgro-20",
+        cover: "https://covers.openlibrary.org/b/id/4648805-M.jpg",
         title: "The Wise Men",
         author: "Issacson, Walter",
         cost: "$15"
