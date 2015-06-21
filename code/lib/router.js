@@ -3,10 +3,8 @@ Router.configure({
 });
 
 
-Router.route('/', function() {
-    this.render('home');
-});
+Router.route('/', {name: 'home'});
 
 Router.route('/Donors', {name: 'donorPage'});
 
-Router.route('/Teachers', {name: 'teacherPage'})
+Router.route('/Teachers', {name: 'teacherPage'});
