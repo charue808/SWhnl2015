@@ -1,25 +1,12 @@
 <template name="bookItem">
-    <div class="row">
-        <div class="col-md-2">
-          <img src="{{cover}}">
-        </div>
-        <div class="col-md-8">
-            <h2>{{title}}</h2>
-            <ul>
-                {{#each tags}}
-                    {{> tag}}
-                {{/each}}
-            </ul>
-            <p>{{donor}}</p>
-        </div>
-        <div class="col-md-2">
-            <h1>$5</h1>
+    <div class=post>
+        <img style="width: 100px; height: 120px;" src="{{cover}}">
+        <div class="post-content">
+            <h2>{{title}}<span style="display: inline-block; margin: 10px;"><button class="btn btn-success">Read it!</button></span></h2>
+            <h3 style="margin-top: -25px;">{{author}}</h3>
+            
+            <h1 style="float: right;">$5</h1>
         </div>
     </div>
 </template>
 
-<template name="tag">
-    <li>
-        {{this}}
-    </li>
-</template>
