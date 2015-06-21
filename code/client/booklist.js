@@ -23,3 +23,14 @@ Template.home.helpers({
     return Books.find();
   }
 });
+
+Template.bookItem.helpers({
+  tags: function(){
+    var tags = Template.instance().data.donor.split(','); 
+    return tags; 
+  }
+});
+
+Template.tag.rendered = function(){
+  console.log(this);
+} 
