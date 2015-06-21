@@ -1,8 +1,8 @@
 if (Books.find().count() === 0) {
   Books.insert({
-    cover: "https://upload.wikimedia.org/wikipedia/en/7/73/Oldmansea.jpg",
-    title: "The Old Man and the Sea",
-    author: "Hemingway, Ernest",
+    cover: "https://upload.wikimedia.org/wikipedia/en/e/e4/Ender%27s_game_cover_ISBN_0312932081.jpg",
+    title: "Ender's Game",
+    author: "Card, Orson S.",
     cost: "$10"
   });
 
@@ -14,9 +14,9 @@ if (Books.find().count() === 0) {
   });
 
     Books.insert({
-        cover: "http://www.nostarch.com/sites/default/files/imagecache/product_main_page/manga_guide_to_physics.png",
-        title: "Manga Guide to Physics",
-        author: "Nitta, Hideo",
+        cover: "https://upload.wikimedia.org/wikipedia/en/4/49/American_gods.jpg",
+        title: "American Gods",
+        author: "Gaiman, Neil",
         cost: "$5"
     });
 
