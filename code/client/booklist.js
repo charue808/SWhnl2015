@@ -31,6 +31,6 @@ Template.bookItem.helpers({
   }
 });
 
-Template.tag.rendered = function(){
-  console.log(this);
-};
+// Template.tag.rendered = function(){
+//   console.log(this);
+// };
