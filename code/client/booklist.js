@@ -31,7 +31,7 @@ Template.home.helpers({
 });
 
 
-<<<<<<< HEAD
+
 
 Template.bookItem.events({
     'click button': function() {
@@ -39,8 +39,3 @@ Template.bookItem.events({
         Session.set('selectedBook', bookId)
     }
 });
-=======
-// Template.tag.rendered = function(){
-//   console.log(this);
-// };
->>>>>>> b1c8dec624e914eb12cf11a4655bf86f4c509862
